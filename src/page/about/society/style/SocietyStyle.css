@@ -1,0 +1,58 @@
+a {
+  text-decoration: none;
+}
+.about .about-content h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+.about .about-content p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 0;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.about-card {
+  padding: 1em;
+  border: 1px solid #ddd;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.about-card:hover .icon {
+  transform: rotate(30deg);
+}
+
+.about-card .icon {
+  color: #cd1f1f;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: all 500ms ease;
+}
+.link {
+  display: flex;
+  align-items: center;
+}
+.about-card .link > span {
+    font-size: 1.2rem;
+  color: black;
+  font-weight: 600;
+  margin-left: 1em;
+}
+
+
+.testimonial {
+    background: #fc2626;
+    padding: 10px 0px 10px 0px;
+  }
+
+@media screen and (max-width: 767px) {
+    .about-card {
+        margin-top: 1em;
+    }
+}

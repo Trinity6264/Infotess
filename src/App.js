@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter,
+  Route,
+  Routes
+} from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
+import "../node_modules/react-bootstrap/dist/react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header/Header";
+import FooterSection from "./components/Footer/FooterSection";
+import Team from "./page/about/team/Team";
+import Society from "./page/about/society/Society";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/about/team" element= {<Team/>} />
+        <Route path="/about/society" element= {<Society/>} />
+      </Routes>
+      <FooterSection />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

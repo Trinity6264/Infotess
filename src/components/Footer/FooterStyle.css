@@ -1,0 +1,57 @@
+footer {
+  width: 100%;
+  background: #2a1550;
+}
+
+.widget-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+footer .contact-list li {
+  margin-bottom: 12px;
+  color: #999;
+}
+footer div li a {
+  color: #999;
+  transition: all 0.3s linear;
+  text-decoration: none;
+}
+footer div li a:hover {
+  color: #fc2626;
+}
+
+footer .contact-list li .i {
+  width: 30px;
+  background: #fc2626;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+
+  color: #fff;
+  text-align: center;
+  top: 4px;
+  padding: 0.2em;
+  margin-right: 10px;
+}
+
+footer .tagcloud a {
+  padding: 5px 10px;
+  border: 1px solid #484848;
+  display: inline-block;
+  color: #999;
+  border-radius: 2px;
+  margin: 0 2px 5px 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+footer .tagcloud a:hover{
+  color: #fc2626;
+  border: 1px solid #fc2626;
+}
