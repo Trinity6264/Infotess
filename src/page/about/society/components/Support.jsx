@@ -9,7 +9,7 @@ const SupportSection = () => {
       <Row >
         <Col md={'4'} sm={'12'} xs={'12'} className={'on-md-mt-10 column'}>
           <div className="about-card">
-            <Link to={'#'} className="link">
+            <Link to={'/gallery'} className="link">
               < AiOutlineCamera className='icon' />
               <span>{'Gallery'}</span>
             </Link>
@@ -17,7 +17,7 @@ const SupportSection = () => {
         </Col>
         <Col md={'4'} sm={'12'} xs={'12'} className={'on-md-mt-10 column'}>
           <div className="about-card">
-            <Link to={'#'} className="link">
+            <Link to={'/about/team'} className="link">
               < AiOutlineProfile className='icon' />
               <span>{'Our Team'}</span>
             </Link>

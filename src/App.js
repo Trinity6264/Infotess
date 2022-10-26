@@ -11,6 +11,7 @@ import Header from "./components/Header/Header";
 import FooterSection from "./components/Footer/FooterSection";
 import Team from "./page/about/team/Team";
 import Society from "./page/about/society/Society";
+import Resources from "./page/resources/Resources";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Routes>
         <Route path="/about/team" element= {<Team/>} />
         <Route path="/about/society" element= {<Society/>} />
+        <Route path="/resources" element= {<Resources/>} />
       </Routes>
       <FooterSection />
     </BrowserRouter>
