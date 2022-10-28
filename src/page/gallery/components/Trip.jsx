@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Row, Image, } from 'react-bootstrap'
+import { Row} from 'react-bootstrap'
 import tourImage1 from '../../../img/trip/tour_1.jpg';
 import tourImage2 from '../../../img/trip/tour_2.jpg';
 import tourImage3 from '../../../img/trip/tour_3.jpg';
@@ -12,6 +12,7 @@ import tourImage9 from '../../../img/trip/tour_9.jpg';
 import tourImage10 from '../../../img/trip/tour_10.jpg';
 import tourImage11 from '../../../img/trip/tour_11.jpg';
 import tourImage12 from '../../../img/trip/tour_12.jpg';
+import GalleryComponent from '../../../components/gallery/GalleryComponent';
 
 
 const Trip = () => {
@@ -32,11 +33,7 @@ const Trip = () => {
     return (
         <Row className='m-2'>
             {listOfTripPics.map((e) => {
-                return <Col key={e} md={'4'} lg={'2'} sm={'6'} xs={'12'} className={'mt-2'}>
-                    <div className="story-img-wrapper">
-                        <Image className='storyImg' src={e} style={{ width: '100%', height: '100%', objectFit: 'cover' }}></Image >
-                    </div>
-                </Col>
+                return <GalleryComponent img={e} key={e}/>
             })}
 
         </Row>

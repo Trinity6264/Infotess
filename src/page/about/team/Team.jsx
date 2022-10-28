@@ -1,7 +1,7 @@
 import React from 'react'
 import PageHeader from '../../../components/page_header/PageHeader'
 import './style/TeamStyle.css'
-import { Col, Row, Container, } from 'react-bootstrap'
+import {  Row, Container, } from 'react-bootstrap'
 import PresidentImg from '../../../img/team/exec_prez.png'
 import AvatImg from '../../../img/team/avat.jpg'
 import SecImg from '../../../img/team/exec_sec.png'

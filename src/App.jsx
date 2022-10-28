@@ -15,18 +15,20 @@ import Resources from "./page/resources/Resources";
 import Gallery from "./page/gallery/Gallery";
 import Contact from "./page/contact/Contact";
 import Courses from "./page/courses/Courses";
+import NotFound from "./page/notFound/NotFound";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/about/team" element= {<Team/>} />
-        <Route path="/about/society" element= {<Society/>} />
-        <Route path="/resources" element= {<Resources/>} />
-        <Route path="/gallery" element= {<Gallery/>} />
-        <Route path="/contact" element= {<Contact/>} />
-        <Route path="/courses" element= {<Courses/>} />
+        <Route path="/about/team" element={<Team />} />
+        <Route path="/about/society" element={<Society />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <FooterSection />
     </BrowserRouter>

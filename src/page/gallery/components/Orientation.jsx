@@ -1,5 +1,6 @@
 import React from 'react'
-import { Col, Row, Image, } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
+import GalleryComponent from '../../../components/gallery/GalleryComponent'
 import orientationImage1 from '../../../img/oreintation/bg_about.jpg'
 import orientationImage2 from '../../../img/oreintation/blog1.jpg'
 import orientationImage3 from '../../../img/oreintation/orient_12.jpg'
@@ -30,11 +31,7 @@ const Orientation = () => {
     return (
         <Row className='m-2'>
             {listOfOrientationPics.map((e) => {
-                return <Col key={e} md={'4'} lg={'2'} sm={'6'} xs={'12'} className={'mt-2'}>
-                    <div className="story-img-wrapper">
-                        <Image className='storyImg' src={e} style={{ width: '100%', height: '100%', objectFit: 'cover' }}></Image >
-                    </div>
-                </Col>
+                return  <GalleryComponent img={e} key={e}/>
             })}
 
         </Row>

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Col, Row, Image, } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
+import GalleryComponent from '../../../components/gallery/GalleryComponent'
 import workShopImage1 from '../../../img/training/1.JPG'
 import workShopImage2 from '../../../img/training/2.JPG'
 import workShopImage3 from '../../../img/training/3.JPG'
@@ -24,11 +25,7 @@ const Workshop = () => {
     return (
         <Row className='m-2'>
             {listOfWorkshopPics.map((e) => {
-                return <Col key={e} md={'4'} lg={'2'} sm={'6'} xs={'12'} className={'mt-2'}>
-                    <div className="story-img-wrapper">
-                        <Image className='storyImg' src={e} style={{ width: '100%', height: '100%', objectFit: 'cover' }}></Image >
-                    </div>
-                </Col>
+                 return <GalleryComponent img={e} key={e}/>
             })}
 
         </Row>
