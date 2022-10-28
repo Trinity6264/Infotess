@@ -12,6 +12,7 @@ import FooterSection from "./components/Footer/FooterSection";
 import Team from "./page/about/team/Team";
 import Society from "./page/about/society/Society";
 import Resources from "./page/resources/Resources";
+import Gallery from "./page/gallery/Gallery";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/about/team" element= {<Team/>} />
         <Route path="/about/society" element= {<Society/>} />
         <Route path="/resources" element= {<Resources/>} />
+        <Route path="/gallery" element= {<Gallery/>} />
       </Routes>
       <FooterSection />
     </BrowserRouter>
