@@ -2,9 +2,9 @@ import React from 'react'
 import { Col, Row, Image, } from 'react-bootstrap'
 import storyImage1 from '../../../img/oreintation/bg_about.jpg'
 import storyImage2 from '../../../img/oreintation/blog1.jpg'
-import storyImage3 from '../../../img/training/7 - Copy.JPG'
-import storyImage4 from '../../../img/training/4 - Copy.JPG'
-import storyImage5 from '../../../img/training/5 - Copy.JPG'
+import storyImage3 from '../../../img/training/7.JPG'
+import storyImage4 from '../../../img/training/4.JPG'
+import storyImage5 from '../../../img/training/5.JPG'
 import storyImage6 from '../../../img/trip/tour_10.jpg'
 const Story = () => {
     const listOfStoryPics = [

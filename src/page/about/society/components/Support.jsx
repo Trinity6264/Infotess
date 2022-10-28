@@ -25,7 +25,7 @@ const SupportSection = () => {
         </Col>
         <Col md={'4'} sm={'12'} xs={'12'} className={'on-md-mt-10 column'}>
           <div className="about-card">
-            <Link to={'#'} className="link">
+            <Link to={'/contact'} className="link">
               < AiOutlineHeart className='icon' />
               <span>{'Support Us'}</span>
             </Link>

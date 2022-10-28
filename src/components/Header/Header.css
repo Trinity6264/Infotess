@@ -35,64 +35,10 @@
 
 
 
-.navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+.nav-logo-wrapper{
+  width: 60px;
+  height: 100px;
 }
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 4px;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-header {
-    float: left;
-  }
-}
-.navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
-  overflow-x: visible;
-  -webkit-overflow-scrolling: touch;
-  border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-.navbar-collapse.in {
-  overflow-y: auto;
-}
-@media (min-width: 768px) {
-  .navbar-collapse {
-    width: auto;
-    border-top: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-  .navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-  .navbar-collapse.in {
-    overflow-y: visible;
-  }
-  .navbar-fixed-bottom .navbar-collapse,
-  .navbar-fixed-top .navbar-collapse,
-  .navbar-static-top .navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-.navbar-fixed-bottom .navbar-collapse,
-.navbar-fixed-top .navbar-collapse {
-  max-height: 340px;
-}
-@media (max-device-width: 480px) and (orientation: landscape) {
-  .navbar-fixed-bottom .navbar-collapse,
-  .navbar-fixed-top .navbar-collapse {
-    max-height: 200px;
-  }
+.nav-logo-wrapper img{
+  width: 100%;
 }

@@ -1,50 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Container, Row, Col, Nav, Card, Navbar, NavDropdown } from 'react-bootstrap'
+import { Container, Row, Col, Nav, Card, Navbar, NavDropdown, Dropdown, Image } from 'react-bootstrap'
 import './Header.css'
 import TopNavBar from './TopNavBar'
 import Logo from '../../img/logo.png'
+import DropdownMenu from 'react-bootstrap/esm/DropdownMenu'
+import DropdownItem from 'react-bootstrap/esm/DropdownItem'
 
 const Header = () => {
     return (
         <header>
             <TopNavBar />
-            <Container >
-                <Row>
-                    <Navbar expand="md" className='navbar ' >
-                        <Container >
-                            <Row className='align-items-center justify-content-between'>
-                                <Col>
-                                    <Navbar.Brand >
-                                        <Link to='/#home'>
-                                            <img src={Logo} alt="Logo" style={{ width: '2.8rem' }} />
-                                        </Link>
-                                    </Navbar.Brand>
-                                </Col>
-                                <Col>
-                                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                                    <Navbar.Collapse id="basic-navbar-nav" >
-                                        <Nav className="me-auto">
-                                            <Nav.Link href="#home">Home</Nav.Link>
-                                            <Nav.Link href="#link">Link</Nav.Link>
-                                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.2">
-                                                    Another action
-                                                </NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                                <NavDropdown.Divider />
-                                                <NavDropdown.Item href="#action/3.4">
-                                                    Separated link
-                                                </NavDropdown.Item>
-                                            </NavDropdown>
-                                        </Nav>
-                                    </Navbar.Collapse>
-                                </Col>
-                            </Row>
-                        </Container>
-                    </Navbar>
-                </Row>
+            <Container>
+            <Navbar className='navbar' sticky='top' style={{top:'20px'}} fluid expanded expand={true}>
+
+                    <Navbar.Brand href='#home' className='nav-logo-wrapper'>
+                        <Image fluid src={Logo} alt="Logo" />
+                    </Navbar.Brand>
+                    <Navbar.Toggle/>
+                    <Navbar.Collapse className='justify-content-end'>
+                    <div className='drop'>
+
+                    </div>
+                    </Navbar.Collapse>
+                
+            </Navbar>
 
             </Container>
         </header>

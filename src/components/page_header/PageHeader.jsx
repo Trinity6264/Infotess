@@ -10,7 +10,7 @@ const PageHeader = ({ pageTitle, page, currentPage, hasCurrentPage }) => {
                 <Row className='align-items-center justify-content-between '>
                     <Col md='6' sm='6' lg='6' xs='8'>
                         <div className="breadcrumb">
-                            <Link to="/" style={{ textDecoration: 'none' }}>
+                            <Link to="/" style={{ textDecoration: 'none', display: 'flex',alignItems:'center', gap:'5px' }}>
                                 <AiOutlineHome /> <span> Home</span>
                             </Link>
                             <span className="crumbs-spacer">
