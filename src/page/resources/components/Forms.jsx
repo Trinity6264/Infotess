@@ -6,13 +6,13 @@ const Forms = () => {
         <Row className='m-2'>
             <Col md={'6'} sm={'12'} xs={'12'} lg={'6'} className={'mt-2'}>
                 <Card className='shadow  border-0'>
-                    <div class="support-info">
-                        <div class="info-title">
+                    <div className="support-info">
+                        <div className="info-title">
                             <BiNote style={{ fontSize: '2rem', color: '#fc2626' }} />
                             {'Electoral commission\'s Form'}
                         </div>
                     </div>
-                    <div class="software-list">
+                    <div className="software-list">
                         <ul>
                             <p style={{fontSize:'1.2em', fontWeight:'300'}}>
                                 Nomination is closed at the moment. Check up Later

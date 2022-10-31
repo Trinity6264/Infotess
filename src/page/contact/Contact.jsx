@@ -13,17 +13,17 @@ const Contact = () => {
                     title={'Google Map'}
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.581467362356!2d-1.684942184674197!3d6.698644122959516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb9934fe42a1dd%3A0x801887bad41bd897!2sINFOTESS%20UEW-K!5e0!3m2!1sen!2sgh!4v1580778764780!5m2!1sen!2sgh"
                         width="100%" height="100%" frameborder="0" style={{ boxShadow: "0 2px 5px 0 rgba(0,0,0,.2)" }}
-                        allowfullscreen="">
+                        allowFullScreen>
 
                     </iframe>
                 </div>
                 <Container>
                     <Row className='mt-2'>
                         <Col md={'4'} sm={'12'} xs={'12'} className={'mt-2'}>
-                            <div class="contact-item-wrapper">
+                            <div className="contact-item-wrapper">
                                 <h4>Address</h4>
-                                <div class="info">
-                                    <div class="icon">
+                                <div className="info">
+                                    <div className="icon">
                                         <FaMapPin className='ic' />
                                     </div>
                                     <p><span>INFOTESS, C/O University of Education - Winneba, P.O.Box 1277, Kumasi -
@@ -32,10 +32,10 @@ const Contact = () => {
                             </div>
                         </Col>
                         <Col md={'4'} sm={'12'} xs={'12'} className={'mt-2'}>
-                            <div class="contact-item-wrapper">
+                            <div className="contact-item-wrapper">
                                 <h4>Phone</h4>
-                                <div class="info">
-                                    <div class="icon">
+                                <div className="info">
+                                    <div className="icon">
                                         <FaMobileAlt className='ic' />
                                     </div>
                                     <p>
@@ -48,10 +48,10 @@ const Contact = () => {
                             </div>
                         </Col>
                         <Col md={'4'} sm={'12'} xs={'12'} className={'mt-2'}>
-                            <div class="contact-item-wrapper">
+                            <div className="contact-item-wrapper">
                                 <h4>E-mail</h4>
-                                <div class="info">
-                                    <div class="icon">
+                                <div className="info">
+                                    <div className="icon">
                                         <FaEnvelope className='ic' />
                                     </div>
                                     <p>
@@ -73,13 +73,13 @@ const Contact = () => {
                         </Row>
                         <Row className='justify-content-center'>
                             <Col xs={'12'} md={'2'} className={'mt-3'}>
-                                <div class="contact-item-wrapper">
-                                    <div class="info">
+                                <div className="contact-item-wrapper">
+                                    <div className="info">
                                         <a href="https://twitter.com/InfotessO" target={'_blank'} rel={'noreferrer'} style={{
                                             display: 'flex',
                                             gap: '10px',
                                         }}>
-                                            <div class="icon">
+                                            <div className="icon">
                                                 <FaTwitter />
                                             </div>
                                             <p>@InfotessO</p>
@@ -87,13 +87,13 @@ const Contact = () => {
                                 </div>
                             </Col>
                             <Col xs={'12'} md={'2'} className={'mt-3'}>
-                                <div class="contact-item-wrapper">
-                                    <div class="info">
+                                <div className="contact-item-wrapper">
+                                    <div className="info">
                                         <a href="https://twitter.com/InfotessO" target={'_blank'} rel={'noreferrer'} style={{
                                             display: 'flex',
                                             gap: '10px',
                                         }}>
-                                            <div class="icon">
+                                            <div className="icon">
                                                 <FaYoutube />
                                             </div>
                                             <p>@Aamusted</p>

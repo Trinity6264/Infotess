@@ -3,8 +3,8 @@ import { FaEnvelope, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { Container } from 'react-bootstrap'
 const TopNavBar = () => {
     return (
-        <nav class="top-nav">
-            <Container class="container">
+        <nav className="top-nav">
+            <Container className="container">
                 <ul>
                     <li><a href="mailto:infotessofficial@gmail.com" target="_blank" rel='noopener noreferrer'> <FaEnvelope /></a></li>
                     <li><a href="https://twitter.com/InfotessO" target="_blank" rel='noopener noreferrer'><FaTwitter /></a></li>

@@ -72,13 +72,13 @@ const Software = () => {
         <Row className='m-2'>
             <Col md={'6'} sm={'12'} xs={'12'} lg={'4'} className={'mt-2'}>
                 <Card className='shadow  border-0'>
-                    <div class="support-info">
-                        <div class="info-title">
+                    <div className="support-info">
+                        <div className="info-title">
                             <BiNote style={{ fontSize: '2rem', color: '#fc2626' }} />
                             {'IDEs/Text Editors '}
                         </div>
                     </div>
-                    <div class="software-list">
+                    <div className="software-list">
                         <ul>
                             {listOfIdes.map(({ label, ulr }) => {
                                 return <li key={label}>
@@ -94,13 +94,13 @@ const Software = () => {
             {/* Designers */}
             <Col md={'6'} sm={'12'} xs={'12'} lg={'4'} className={'mt-2'}>
                 <Card className='shadow  border-0'>
-                    <div class="support-info">
-                        <div class="info-title">
+                    <div className="support-info">
+                        <div className="info-title">
                             <AiOutlineCamera style={{ fontSize: '2rem', color: '#fc2626' }} />
                             {'IDEs/Text Editors '}
                         </div>
                     </div>
-                    <div class="software-list">
+                    <div className="software-list">
                         <ul>
                             {listOfDesignerTools.map(({ label, ulr }) => {
                                 return <li key={label}>
@@ -116,13 +116,13 @@ const Software = () => {
             {/* Databases */}
             <Col md={'6'} sm={'12'} xs={'12'} lg={'4'} className={'mt-2'}>
                 <Card className='shadow  border-0'>
-                    <div class="support-info">
-                        <div class="info-title">
+                    <div className="support-info">
+                        <div className="info-title">
                             <BiLayer style={{ fontSize: '2rem', color: '#fc2626' }} />
                             {'Database/Servers '}
                         </div>
                     </div>
-                    <div class="software-list">
+                    <div className="software-list">
                         <ul>
                             {listOfDbs.map(({ label, ulr }) => {
                                 return <li key={label}>

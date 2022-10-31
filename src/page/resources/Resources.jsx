@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, Container, Tab, Tabs } from 'react-bootstrap'
+import PageHeader from '../../components/page_header/PageHeader'
 import Constitution from './components/Constitution'
 import CoursesMaterial from './components/CoursesMaterial'
 import CoursesOutline from './components/CoursesOutline'
@@ -11,31 +12,34 @@ import './style/ResourcesStyle.css'
 const Resources = () => {
 
     return (
-        <section className='section resources'>
-            <Container>
-                <Card>
-                    <Tabs defaultActiveKey="Course-Outline" id="uncontrolled-tab-example"
-                    >
-                        <Tab title={'Course-Outline'} eventKey='Course-Outline'
+        <>
+        <PageHeader currentPage={'Resources'} hasCurrentPage={false} page={'Resources'} pageTitle={'Resources'} />
+            <section className='section resources'>
+                <Container>
+                    <Card>
+                        <Tabs defaultActiveKey="Course-Outline" id="uncontrolled-tab-example"
                         >
-                            <CoursesOutline />
-                        </Tab>
-                        <Tab title={'Course-Materials'} eventKey='Course-Materials'>
-                            <CoursesMaterial />
-                        </Tab>
-                        <Tab title={'Software'} eventKey={'Software'} >
-                            <Software />
-                        </Tab>
-                        <Tab title={'Constitution'} eventKey={'Constitution'}>
-                            <Constitution />
-                        </Tab>
-                        <Tab title={'E.C-Forms'} eventKey={'E.C-Forms'} >
-                            <Forms />
-                        </Tab>
-                    </Tabs>
-                </Card>
-            </Container>
-        </section>
+                            <Tab title={'Course-Outline'} eventKey='Course-Outline'
+                            >
+                                <CoursesOutline />
+                            </Tab>
+                            <Tab title={'Course-Materials'} eventKey='Course-Materials'>
+                                <CoursesMaterial />
+                            </Tab>
+                            <Tab title={'Software'} eventKey={'Software'} >
+                                <Software />
+                            </Tab>
+                            <Tab title={'Constitution'} eventKey={'Constitution'}>
+                                <Constitution />
+                            </Tab>
+                            <Tab title={'E.C-Forms'} eventKey={'E.C-Forms'} >
+                                <Forms />
+                            </Tab>
+                        </Tabs>
+                    </Card>
+                </Container>
+            </section>
+        </>
     )
 }
 

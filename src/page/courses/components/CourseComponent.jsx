@@ -13,7 +13,7 @@ const CourseComponent = ({ data }) => {
                                 <h4>{bodyHeader}</h4>
                                 <p>{bodyContent}</p>
                                 {bodyLink && <a href={bodyLink} target={'_blank'} rel="noreferrer">
-                                    <Button variant='outline-danger' class="btn btn-common btn-sm">Click to Apply</Button
+                                    <Button variant='outline-danger' className="btn btn-common btn-sm">Click to Apply</Button
                                     ></a>}
                             </Card.Body>
                         </Card>

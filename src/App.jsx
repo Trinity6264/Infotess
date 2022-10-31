@@ -16,12 +16,16 @@ import Gallery from "./page/gallery/Gallery";
 import Contact from "./page/contact/Contact";
 import Courses from "./page/courses/Courses";
 import NotFound from "./page/notFound/NotFound";
+import Home from "./page/home/Home";
+import ReadMore from "./page/readmore/ReadMore";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<ReadMore />} />
         <Route path="/about/team" element={<Team />} />
         <Route path="/about/society" element={<Society />} />
         <Route path="/resources" element={<Resources />} />

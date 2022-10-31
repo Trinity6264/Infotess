@@ -1,0 +1,20 @@
+.con {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.read-more-img-wrapper {
+  width: 100%;
+}
+
+.read-more-img-wrapper img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.con p {
+    line-height: 2.5rem;
+    text-align: justify;
+}

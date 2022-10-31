@@ -78,13 +78,13 @@ const Courses = () => {
             <section className='section courses'>
                 <Container>
                     {/* Community  */}
-                    <h3 class="section-title">Community of Practice </h3>
+                    <h3 className="section-title">Community of Practice </h3>
                     <CourseComponent data={dataCommunity} />
                     {/* Catch-class */}
-                    <h3 class="section-title">Catch-Up Class  </h3>
+                    <h3 className="section-title">Catch-Up Class  </h3>
                     <CourseComponent data={dataClass} />
                     {/* Catch-class */}
-                    <h3 class="section-title">Developer Student Clubs</h3>
+                    <h3 className="section-title">Developer Student Clubs</h3>
                     <CourseComponent data={dataDevs} />
                 </Container>
             </section>

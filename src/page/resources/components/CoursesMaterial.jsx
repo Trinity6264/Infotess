@@ -25,13 +25,13 @@ const CoursesMaterial = () => {
       {listOfCourseMaterial.map(({ fSem, sSem, title }) => {
         return <Col md={'6'} sm={'12'} xs={'12'} lg={'4'} className={'mt-2'}>
           <Card className='shadow  border-0'>
-            <div class="support-info">
-              <div class="info-title">
+            <div className="support-info">
+              <div className="info-title">
                 <FcDocument style={{ fontSize: '2.5rem' }} />
                 {title}
               </div>
             </div>
-            <div class="software-list">
+            <div className="software-list">
               <ul>
                 <strong>Click to download materials</strong>
                 <li>
