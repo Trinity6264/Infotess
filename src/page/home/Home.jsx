@@ -48,7 +48,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchPost()
-  }, [])
+  })
 
   return (
     <div className='section home'>
