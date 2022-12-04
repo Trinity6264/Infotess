@@ -18,6 +18,7 @@ import Courses from "./page/courses/Courses";
 import NotFound from "./page/notFound/NotFound";
 import Home from "./page/home/Home";
 import ReadMore from "./page/readmore/ReadMore";
+import Dues from "./page/dues/Dues";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/dues" element={<Dues />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <FooterSection />

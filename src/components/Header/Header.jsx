@@ -23,11 +23,11 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto d-flex align-items-center justify-content-center gap-3">
-                            <Link to={'/'}>
-                                Home
-                            </Link>
                             <Link to={'/courses'}>
                                 Courses
+                            </Link>
+                            <Link to={'/dues'}>
+                                Dues Payment
                             </Link>
                             <Link to={'/resources'}>
                                 Resources
