@@ -1,17 +1,13 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { Container } from 'react-bootstrap'
-import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import tour1 from '../../img/trip/tour_1.jpg'
 import tour2 from '../../img/trip/tour_2.jpg'
 import tour3 from '../../img/trip/tour_3.jpg'
 import tour4 from '../../img/trip/tour_4.jpg'
-import { find, postSelector } from '../../reducers/PostSlice'
 import './style/HomeStyle.css'
 
 const Home = () => {
-  const disPatch = useDispatch()
 
   const listOfPost = [
     {
@@ -40,21 +36,12 @@ const Home = () => {
     },
   ]
 
-  const post = useSelector(postSelector)
-
-  const fetchPost = () => {
-    disPatch(find([...listOfPost]))
-  }
-
-  useEffect(() => {
-    fetchPost()
-  })
 
   return (
     <div className='section home'>
       <Container>
         <div className="posts">
-          {post?.map(({ desc, id, img, title }) => {
+          {listOfPost?.map(({ desc, id, img, title }) => {
             return <div className="post" key={id}>
               <div className="img">
                 <img src={img} alt="Post-profile" />
