@@ -10,7 +10,7 @@ const Contact = () => {
             <section className="section contact">
                 <div className="map-wrapper">
                     <iframe
-                    title={'Google Map'}
+                        title={'Google Map'}
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.581467362356!2d-1.684942184674197!3d6.698644122959516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb9934fe42a1dd%3A0x801887bad41bd897!2sINFOTESS%20UEW-K!5e0!3m2!1sen!2sgh!4v1580778764780!5m2!1sen!2sgh"
                         width="100%" height="100%" frameborder="0" style={{ boxShadow: "0 2px 5px 0 rgba(0,0,0,.2)" }}
                         allowFullScreen>
@@ -39,10 +39,9 @@ const Contact = () => {
                                         <FaMobileAlt className='ic' />
                                     </div>
                                     <p>
-                                        <a href="tel:+233245742899">+233(0)24 574 2899
-                                        </a>
+                                        <a href="tel:+233540520156">+233(0)54 0520 156</a>
                                         <br />
-                                        <a href="tel:+233559569752">+233(0)55 956 9752</a>
+                                        <a href="tel:+233243548887">+233(0)24 3548 887</a>
                                     </p>
                                 </div>
                             </div>
@@ -55,7 +54,7 @@ const Contact = () => {
                                         <FaEnvelope className='ic' />
                                     </div>
                                     <p>
-                                        <a href="mailto:infotessofficial@gmail.com">infotessofficial@gmail.com</a>
+                                        <a href="mailto:aamustedinfotess@gmail.com">Aamusted Official</a>
                                     </p>
                                 </div>
                             </div>
@@ -75,14 +74,14 @@ const Contact = () => {
                             <Col xs={'12'} md={'2'} className={'mt-3'}>
                                 <div className="contact-item-wrapper">
                                     <div className="info">
-                                        <a href="https://twitter.com/InfotessO" target={'_blank'} rel={'noreferrer'} style={{
+                                        <a href="https://twitter.com/myinfotess" target={'_blank'} rel={'noreferrer'} style={{
                                             display: 'flex',
                                             gap: '10px',
                                         }}>
                                             <div className="icon">
                                                 <FaTwitter />
                                             </div>
-                                            <p>@InfotessO</p>
+                                            <p>Infotess Twitter</p>
                                         </a></div>
                                 </div>
                             </Col>
