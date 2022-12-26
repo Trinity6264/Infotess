@@ -10,7 +10,7 @@ const FooterSection = () => {
         <footer className='section'>
             <Container >
                 <Row className='justify-content-around row '>
-                    <Col md='3' sm='12' className=''>
+                    <Col md='5' sm='12' className=''>
                         <div className="contact-us">
                             <h3 className="widget-title">Contact Us</h3>
                             <div className="contact-list">
@@ -23,11 +23,11 @@ const FooterSection = () => {
                                     <AiOutlinePhone className='i' />
                                     <span style={{display: 'flex',flexDirection:'column', color:'#999'}}>
                                         <a href="tel:+233540520156">+233(0)54 0520 156</a> 
-                                        <a  href="tel:+233559569752">+233(0)24 3548 887</a>
+                                        <a  href="tel:+233243548887">+233(0)24 3548 887</a>
                                     </span>
                                 </li>
                                 <li>
-                                    <FaEnvelope className='i' /> <span><a href="mailto:infotessofficial@gmail.com">infotessofficial@gmail.com</a></span>
+                                    <FaEnvelope className='i' /> <span><a href="mailto:aamustedinfotess@gmail.com">Email us</a></span>
                                 </li>
                             </div>
                         </div>
@@ -36,11 +36,13 @@ const FooterSection = () => {
                         <h3 className="widget-title">Useful Links</h3>
                         <div >
                             <li><a target="_blank" rel="noreferrer" href="https://aamusted.edu.gh/">Aamusted Website</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://instagram.com/myinfotess?igshid=YmMyMTA2M2Y=">Infotess Instagram</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100074619553556&mibextid=ZbWKwL">Infotess Facebook</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://twitter.com/myinfotess">Infotess Twitter</a></li>
-                            <li><a target="_blank" rel="noreferrer" href="http://erisip.uew.edu.gh">ERISIP Portal</a></li>
+                            
                         </div>
                     </Col>
-                    <Col md='3' sm='12' className=''>
+                    <Col md='4' sm='12' className=''>
                         <h3 className="widget-title">Explore</h3>
                         <div className="tagcloud">
                             <a target="_blank" rel="noreferrer" href="https://www.netacad.com/" className="tag-link">NETACAD</a>
@@ -54,7 +56,7 @@ const FooterSection = () => {
                             <a target="_blank" rel="noreferrer" href="https://github.com/" className="tag-link">GITHUB</a>
                         </div>
                     </Col>
-                    <Col md='3' sm='12' className='sm-mt-5'>
+                    {/* <Col md='3' sm='12' className='sm-mt-5'>
                         <div className="block-subscribe">
                             <h3 className="widget-title">Download App</h3>
                             <p style={{  color: '#999'}}>Download Infotess Online Now </p>
@@ -63,7 +65,7 @@ const FooterSection = () => {
 
                             </a>
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
         </footer>
