@@ -22,8 +22,8 @@ const FooterSection = () => {
                                 <li style={{display: 'flex'}}>
                                     <AiOutlinePhone className='i' />
                                     <span style={{display: 'flex',flexDirection:'column', color:'#999'}}>
-                                        <a href="tel:+233245742899">+233(0)24 5742899</a> 
-                                        <a  href="tel:+233559569752">+233(0)55 956 9752</a>
+                                        <a href="tel:+233540520156">+233(0)54 0520 156</a> 
+                                        <a  href="tel:+233559569752">+233(0)24 3548 887</a>
                                     </span>
                                 </li>
                                 <li>
@@ -35,8 +35,8 @@ const FooterSection = () => {
                     <Col md='3' sm='12' className=''>
                         <h3 className="widget-title">Useful Links</h3>
                         <div >
-                            <li><a target="_blank" rel="noreferrer" href="https://www.uew.edu.gh/">UEW Website</a></li>
-                            <li><a target="_blank" rel="noreferrer" href="http://sip.uew.edu.gh/login/login.php">OSIS Portal</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://aamusted.edu.gh/">Aamusted Website</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://twitter.com/myinfotess">Infotess Twitter</a></li>
                             <li><a target="_blank" rel="noreferrer" href="http://erisip.uew.edu.gh">ERISIP Portal</a></li>
                         </div>
                     </Col>

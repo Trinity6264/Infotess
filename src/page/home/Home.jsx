@@ -1,55 +1,55 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import tour1 from '../../img/trip/tour_1.jpg'
-import tour2 from '../../img/trip/tour_2.jpg'
-import tour3 from '../../img/trip/tour_3.jpg'
-import tour4 from '../../img/trip/tour_4.jpg'
+import { db } from '../../app/firebase'
 import './style/HomeStyle.css'
+import { collection, getDocs, } from 'firebase/firestore'
 
 const Home = () => {
 
-  const listOfPost = [
-    {
-      id: 0,
-      title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quo accusamus pariatur necessitatibus veniam nisi tempore',
-      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt alias non eum culpa officia libero saepe odio deleniti, qui autem voluptate nostrum adipisci pariatur veniam voluptas nobis optio corporis distinctio!',
-      img: tour1
-    },
-    {
-      id: 1,
-      title: ' consectetur adipisicing elit. Quia quo accusamus pariatur necessitatibus veniam nisi tempore',
-      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt alias non eum culpa officia libero saepe odio deleniti, qui autem voluptate nostrum adipisci pariatur veniam voluptas nobis optio corporis distinctio!',
-      img: tour2
-    },
-    {
-      id: 2,
-      title: ' consectetur adipisicing elit. Quia quo accusamus pariatur necessitatibus veniam nisi tempore',
-      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt alias non eum culpa officia libero saepe odio deleniti, qui autem voluptate nostrum adipisci pariatur veniam voluptas nobis optio corporis distinctio!',
-      img: tour3
-    },
-    {
-      id: 3,
-      title: ' consectetur adipisicing elit. Quia quo accusamus pariatur necessitatibus veniam nisi tempore',
-      desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt alias non eum culpa officia libero saepe odio deleniti, qui autem voluptate nostrum adipisci pariatur veniam voluptas nobis optio corporis distinctio!',
-      img: tour4
-    },
-  ]
+  const [listOfPost, setListOfPost] = useState([])
 
+
+  // fetch data from firestore
+
+  const fetchFromFirestore = async () => {
+    try {
+      let listArr = [];
+      const querySnapshot = await getDocs(collection(db, "Posts"));
+      querySnapshot.forEach((doc) => {
+        listArr.push({ ...doc.data(), id: doc.id })
+      });
+      setListOfPost(listArr)
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+
+  useEffect(() => {
+    fetchFromFirestore()
+  }, [])
+
+
+  const getText = (html) => {
+    const doc = new DOMParser().parseFromString(html, 'text/html')
+    return doc.body.textContent;
+  }
 
   return (
     <div className='section home'>
       <Container>
         <div className="posts">
-          {listOfPost?.map(({ desc, id, img, title }) => {
+          {listOfPost?.map(({ body, id, img, title }) => {
             return <div className="post" key={id}>
               <div className="img">
                 <img src={img} alt="Post-profile" />
               </div>
               <div className="content">
                 <h1>{title}</h1>
-                <p>{desc}</p>
-                <Link to={`/${id}`} state={{ desc, id, img, title }}>
+                <p>
+                  {getText(body)}
+                </p>
+                <Link to={`/${id}`} state={{ body, id, img, title }}>
                   Read more
                 </Link>
               </div>

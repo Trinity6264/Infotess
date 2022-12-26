@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 import './style/ReadMoreStyle.css'
 const ReadMore = () => {
   const postState = useLocation()
-  const {desc, img, title} = postState.state;
+  const {body, img, title} = postState.state;
 
   return (
     <div className='section read-more'>
@@ -15,7 +15,7 @@ const ReadMore = () => {
           </div>
           <h2>{title}</h2>
           <p>
-            {desc}
+            {body}
           </p>
         </div>
       </Container>
