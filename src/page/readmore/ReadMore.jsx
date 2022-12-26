@@ -6,6 +6,11 @@ const ReadMore = () => {
   const postState = useLocation()
   const {body, img, title} = postState.state;
 
+  const getText = (html) => {
+    const doc = new DOMParser().parseFromString(html, 'text/html')
+    return doc.body.textContent;
+  }
+
   return (
     <div className='section read-more'>
       <Container>
@@ -15,7 +20,7 @@ const ReadMore = () => {
           </div>
           <h2>{title}</h2>
           <p>
-            {body}
+            {getText(body)}
           </p>
         </div>
       </Container>

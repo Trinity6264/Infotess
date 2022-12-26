@@ -4,22 +4,26 @@ import { Link } from 'react-router-dom'
 import { db } from '../../app/firebase'
 import './style/HomeStyle.css'
 import { collection, getDocs, } from 'firebase/firestore'
+import Loading from '../../components/Loading'
 
 const Home = () => {
 
   const [listOfPost, setListOfPost] = useState([])
+  const [isBusy, setBusy] = useState(true)
 
 
   // fetch data from firestore
 
   const fetchFromFirestore = async () => {
     try {
+      if(!isBusy) return;
       let listArr = [];
       const querySnapshot = await getDocs(collection(db, "Posts"));
       querySnapshot.forEach((doc) => {
         listArr.push({ ...doc.data(), id: doc.id })
       });
       setListOfPost(listArr)
+      setBusy(false)
     } catch (error) {
       console.log(error.message);
     }
@@ -27,7 +31,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchFromFirestore()
-  }, [])
+  }, [fetchFromFirestore])
 
 
   const getText = (html) => {
@@ -38,6 +42,7 @@ const Home = () => {
   return (
     <div className='section home'>
       <Container>
+        {isBusy  && <Loading /> }
         <div className="posts">
           {listOfPost?.map(({ body, id, img, title }) => {
             return <div className="post" key={id}>
@@ -49,6 +54,7 @@ const Home = () => {
                 <p>
                   {getText(body)}
                 </p>
+                
                 <Link to={`/${id}`} state={{ body, id, img, title }}>
                   Read more
                 </Link>
