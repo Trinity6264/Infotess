@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import PageHeader from '../../components/page_header/PageHeader'
 import './style/ContactStyle.css'
-import { FaMapPin, FaMobileAlt, FaEnvelope, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaMapPin, FaMobileAlt, FaEnvelope, FaTwitter, FaInstagram } from 'react-icons/fa'
 const Contact = () => {
     return (
         <>
@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="map-wrapper">
                     <iframe
                         title={'Google Map'}
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.581467362356!2d-1.684942184674197!3d6.698644122959516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb9934fe42a1dd%3A0x801887bad41bd897!2sINFOTESS%20UEW-K!5e0!3m2!1sen!2sgh!4v1580778764780!5m2!1sen!2sgh"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.581467362356!2d-1.684942184674197!3d6.698644122959516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb9934fe42a1dd%3A0x801887bad41bd897!2sINFOTESS%20Aamusted!5e0!3m2!1sen!2sgh!4v1580778764780!5m2!1sen!2sgh"
                         width="100%" height="100%" frameborder="0" style={{ boxShadow: "0 2px 5px 0 rgba(0,0,0,.2)" }}
                         allowFullScreen>
 
@@ -26,8 +26,7 @@ const Contact = () => {
                                     <div className="icon">
                                         <FaMapPin className='ic' />
                                     </div>
-                                    <p><span>INFOTESS, C/O University of Education - Winneba, P.O.Box 1277, Kumasi -
-                                        Ghana.</span></p>
+                                    <p><span>AAMUSTED INFOTESS, P.O BOX 1277 KUMASI-GHANA</span></p>
                                 </div>
                             </div>
                         </Col>
@@ -93,9 +92,9 @@ const Contact = () => {
                                             gap: '10px',
                                         }}>
                                             <div className="icon">
-                                                <FaYoutube />
+                                                <FaInstagram />
                                             </div>
-                                            <p>@Aamusted</p>
+                                            <p>Aamusted Infotess Official</p>
                                         </a></div>
                                 </div>
                             </Col>
